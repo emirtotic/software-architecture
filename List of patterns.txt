@@ -1,0 +1,21 @@
+1. Singleton Pattern (Kreacioni)
+Osigurava da postoji samo jedna instanca klase i omogućava globalni pristup toj instanci.
+
+2.Factory Method Pattern (Kreacioni)
+Koristi se za kreiranje objekata preko "fabrike" koja odlučuje koji tačan podtip će biti kreiran, što olakšava dodavanje
+novih podtipova bez izmene klijentskog koda.
+
+3. Observer Pattern (Ponašajni)
+Omogućava objektima da budu obavešteni o promenama u drugom objektu, korisno za obaveštavanje više posmatrača o promenama stanja.
+
+4. Strategy Pattern (Ponašajni)
+Omogućava izbor među različitim algoritmima (strategijama) u zavisnosti od situacije, bez izmene klase koja ih koristi.
+
+5. Builder Pattern (Kreacioni)
+Omogućava postepeno kreiranje složenih objekata, posebno korisno kada objekat ima mnogo opcionalnih parametara ili
+kada je poželjna fluent API sintaksa.
+
+6. Decorator Pattern (Strukturni)
+Omogućava dinamičko dodavanje novih funkcionalnosti objektu tako što ga "omotamo" u dekorator klasu. Svaki dekorator
+implementira isti interfejs kao i originalni objekat, ali može proširiti ponašanje objekta pre ili posle poziva metoda,
+čineći kôd modularnijim i fleksibilnijim.
