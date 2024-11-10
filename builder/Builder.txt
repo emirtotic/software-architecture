@@ -1,0 +1,24 @@
+Builder Pattern je najkorisniji:
+
+Kada klasa ima mnogo opcionalnih parametara.
+Kada je poželjno da objekat bude nepromenljiv nakon kreiranja.
+Kada želimo da poboljšamo čitljivost i održavanje koda.
+
+1. Fluent API i čitljivost
+Builder Pattern omogućava kreiranje objekta kroz tzv. fluent API pristup, gde možemo "nizati" metode za postavljanje
+atributa, što čini kôd čitljivijim i jednostavnijim za korišćenje. Na primer:
+
+2. Immutability (Nepromenljivost)
+Builder Pattern omogućava kreiranje nepromenljivih objekata jer Finalizuje postavljanje svih parametara kroz build() metod.
+Nakon što se objekat jednom kreira, njegova svojstva ne mogu se menjati bez rekonstrukcije.
+Ovo je korisno za sigurnost podataka i konkurentno programiranje, jer se objekat ne može menjati tokom izvršavanja, što
+smanjuje rizik od grešaka u više-nitnim aplikacijama.
+
+3. Smanjenje kompleksnosti kod objekata sa mnogo opcionalnih parametara
+Ako klasa ima mnogo parametara koji nisu svi obavezni, korišćenje konstruktor-a sa svim parametrima može postati nepraktično
+(tzv. "telescoping constructor" problem). Builder Pattern omogućava da samo obavezni parametri budu deo konstruktora,
+dok se opcionalni parametri dodaju postepeno.
+
+4. Validacija tokom izgradnje objekta
+Kada koristimo Builder Pattern, možemo dodati logiku validacije u build() metod pre nego što kreiramo objekat. Ovo
+osigurava da objekat ne može biti kreiran u neispravnom stanju. Na primer:
