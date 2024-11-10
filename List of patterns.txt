@@ -19,3 +19,8 @@ kada je poželjna fluent API sintaksa.
 Omogućava dinamičko dodavanje novih funkcionalnosti objektu tako što ga "omotamo" u dekorator klasu. Svaki dekorator
 implementira isti interfejs kao i originalni objekat, ali može proširiti ponašanje objekta pre ili posle poziva metoda,
 čineći kôd modularnijim i fleksibilnijim.
+
+7. Facade Pattern (Strukturni)
+Pruža pojednostavljeno sučelje koje objedinjuje složeni podsistem. Umesto da klijent direktno pristupa pojedinačnim
+komponentama podsistema, koristi Facade klasu koja objedinjuje te komponente u jasnije i jednostavnije sučelje. Ovo
+smanjuje zavisnost klijenta od unutrašnjih detalja podsistema i pojednostavljuje interakciju.
