@@ -24,3 +24,15 @@ implementira isti interfejs kao i originalni objekat, ali može proširiti pona�
 Pruža pojednostavljeno sučelje koje objedinjuje složeni podsistem. Umesto da klijent direktno pristupa pojedinačnim
 komponentama podsistema, koristi Facade klasu koja objedinjuje te komponente u jasnije i jednostavnije sučelje. Ovo
 smanjuje zavisnost klijenta od unutrašnjih detalja podsistema i pojednostavljuje interakciju.
+
+8. Command Pattern (Ponašajni)
+Enkapsulira zahtev ili operaciju kao objekat, omogućavajući fleksibilno pokretanje, odlaganje i poništavanje komandi.
+Koristan je u implementaciji funkcionalnosti kao što su undo/redo i u scenarijima gde se akcije izvršavaju na
+različitim uređajima ili objektima, što čini klijentski kod nezavisnim od specifičnih implementacija komandi.
+
+   Struktura Command Pattern-a:
+       Interfejs Command koji definiše execute() metodu za izvršavanje komande.
+       Konkretne komande (npr. TurnOnLightCommand, TurnOffLightCommand) koje implementiraju Command interfejs
+       i sadrže specifičnu logiku.
+       Invoker (npr. RemoteControl) koji pokreće komande.
+       Receiver (npr. Light, Fan) koji sadrži osnovne operacije kao što su on() i off().
