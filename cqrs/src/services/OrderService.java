@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class OrderService {
+
     private Map<String, Order> orders = new HashMap<>();
 
     public void createOrder(String orderId, String customerName) {

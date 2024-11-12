@@ -1,6 +1,7 @@
 package commands;
 
 public class CreateOrderCommand {
+
     private String orderId;
     private String customerName;
 
